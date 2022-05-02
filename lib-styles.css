@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'grand_hotelregular';
+    src: url('fonts/grand-hotel/grandhotel-regular-webfont.woff2') format('woff2'),
+         url('fonts/grand-hotel/grandhotel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amitaregular';
+    src: url('fonts/amita/amita-regular-webfont.woff2') format('woff2'),
+         url('fonts/amita/amita-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8F6EF;
+}
+
+.mainHeading {
+    font-family: 'grand_hotelregular';
+    font-size: 60pt;
+    text-align: center;
+    font-weight: 800;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 110%;
+    background-image: url('washintonHerald-1922.jpg'); 
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 50px;
+    grid-template-rows: 35em;
+}
+
+.libBook {
+    background-color: #B8DFD8;
+    opacity: 0.95;
+    padding: 20px;
+    height: 23em;
+    border-radius: 20px;
+    font-family: 'amitaregular';
+    font-size: 16pt;
+    color: #4C4C6D;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex: 1 1 auto;
+}
+.dltbtn {
+    display: flex;
+    justify-content: flex-end;
+}
+.dltbtn button {
+    font-family: 'amitaregular';
+    font-size: 14pt;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: #4C4C6D;
+    background-color: #E8F6EF;
+    border: solid #4C4C6D 2px;
+}
+
+.addBook {
+    background-color: #FFE194;
+    padding: 60px 5px 0 30px;
+    color: #4C4C6D;
+}
+#newBook {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px 10px 30px;
+    font-family: 'amitaregular';
+    font-size: 16pt;
+}
+#newBook .fillInfo {
+    display: flex;
+    justify-content: space-between;
+}
+#newBook input[type='text'] {
+    height: 20px;
+    width: 20rem;
+    margin-top: 5px;
+}
+#newBook div:last-child {
+    display: flex;
+    justify-content: center;
+}
+.addBookBtn {
+    font-family: 'amitaregular';
+    font-size: 14pt;
+    padding: 0 20px;
+    border-radius: 10px;
+    justify-self: center;
+    color: #4C4C6D;
+    background-color: #E8F6EF;
+    border: solid #4C4C6D 2px;
+}
