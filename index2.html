@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="lib-styles.css">
+    <script src="library-class.js" defer></script>
+</head>
+<body>
+    <div class="heading">
+        <p class="mainHeading">&#129488; My Library</p>
+    </div>
+    <div class="main">
+        <div class="display"></div>
+        <div class="addBook">
+            <form id="newBook" action="">
+                <div class="fillInfo">
+                    <lable for="author">Author</lable>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div class="fillInfo">
+                    <lable for="title">Title</lable>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="fillInfo">
+                    <lable for="year">Year</lable>
+                    <input type="text" id="year" name="year">
+                </div>
+                <div class="fillInfo">
+                    <label for="publisher">Publisher</label>
+                    <input type="text" id="publisher" name="publisher">
+                </div>
+                <div class="rSlider">
+                    <lable for="readOrNot">Read
+                        <input type="checkbox" id="readOrNot" name="isRead">
+                    </lable>
+                </div>
+                <div>
+                    <button class="addBookBtn">Add A New Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
