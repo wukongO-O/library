@@ -109,3 +109,8 @@ body {
     background-color: #E8F6EF;
     border: solid #4C4C6D 2px;
 }
+
+.req::after {
+    content: ' *';
+    color: rgb(255, 94, 0);
+}

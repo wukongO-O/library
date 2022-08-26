@@ -97,3 +97,26 @@ addBook.addEventListener('submit', readChecked);
 
 const animalFarmStatus = document.querySelector('.display div.libBook:nth-child(2) #read');
 animalFarmStatus.checked = true;
+
+//form validation
+const authorInput = document.getElementById('author');
+authorInput.addEventListener('input', () => {
+  authorInput.setCustomValidity('');
+  authorInput.checkValidity();
+});
+authorInput.addEventListener('invalid', () => {
+  if (authorInput.value === '') {
+    authorInput.setCustomValidity('Enter author name, please!');
+  };
+}); 
+
+const titleInput = document.getElementById('title');
+function missingTitle() {
+  if (titleInput.validity.valueMissing) {
+    titleInput.setCustomValidity('Book title, please!');
+    titleInput.reportValidity();
+  } else {
+    titleInput.setCustomValidity('');
+  }
+}
+titleInput.addEventListener('input', missingTitle);
